@@ -5,9 +5,11 @@ import "./Dictionary.css";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
 
-function handleResponse(response) {
-console.log(response.data);
-}
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  // https://dictionaryapi.dev/ 
   function search(event) {
     event.preventDefault();
     alert(`Searching for ${keyword} definition`);
